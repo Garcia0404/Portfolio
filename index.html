@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mi portfolio con mis proyectos y una breve información mía.">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Julio García</title>
+        <link rel="icon" href="" type="image/png">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                JG dev
+            </div>
+            <div class="toggle">
+                <button class="show-menu">
+                    <div class="toggle-bar" id="toggle-bar1"></div>
+                    <div class="toggle-bar" id="toggle-bar2"></div>
+                    <div class="toggle-bar" id="toggle-bar3"></div>
+                </button>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="index.html" class="list-item__link">Home</a></li>
+                    <li class="list-item"><a href="#proyects" class="list-item__link">Proyects</a></li>
+                    <li class="list-item"><a href="#contact" class="list-item__link">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="info">
+            <div>
+                <h1>Hi!</h1>
+                <h1>I'm Frontend Developer<span id="typewriter" style="color: #434145;"></span></h1>
+                <p><b>Junior FrontEnd Developer</b> who aims to create compositions that are  aesthetically pleasing and easy to understand for all audiences.</p>
+            </div>
+        </section>
+
+        <section class="proyects" id="proyects">
+            <h2>Proyects</h2>
+            <div>
+                <img src="img/shoes7.jpg" alt="proyect-1">
+                <img src="img/shoes6.jpg" alt="proyect-2">
+                <img src="img/shoes1.jpg" alt="proyect-3">
+                <img src="img/caps2.jpg" alt="proyect-4">
+                <img src="img/caps1.jpg" alt="proyect-5">
+                <img src="img/shoes9.jpg" alt="proyect-6">
+            </div>
+        </section>
+        
+        <!-- <section class="technologies">
+            <h2>Technologies</h2>
+        </section> -->
+        
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post" id="formulario">
+                <div>
+                    <label for="nombre">Nombres</label>
+                    <input class="form-input" type="text" id="nombre" placeholder="Escriba sus nombres">
+                    <span id="nombre--error" class="input--error"></span>
+                </div>
+                <div>
+                    <label for="apellido">Apellidos</label>
+                    <input class="form-input" type="text" id="apellido" placeholder="Escriba sus apellidos">
+                    <span id="apellido--error" class="input--error"></span>
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input class="form-input" type="email" id="correo" placeholder="Escriba su correo">
+                    <span id="correo--error" class="input--error"></span>
+                </div>
+                <div>
+                    <label for="celular">Celular</label>
+                    <input class="form-input" type="text" id="celular" placeholder="Escriba su celular">
+                    <span id="celular--error" class="input--error"></span>
+                </div>
+                <textarea class="form-input" placeholder="Escribe un mensaje" id="mensaje" cols="30" rows="8"></textarea>
+                <span id="mensaje--error" class="input--error"></span>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        
+        <footer>
+            <!-- <h4>Todos los derechos reservados</h4> -->
+        </footer>
+        
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
